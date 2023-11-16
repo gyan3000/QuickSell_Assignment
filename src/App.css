@@ -1,5 +1,14 @@
+body {
+  background-color: #eeeeee78;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -32,17 +41,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
-
-.nav{
-  border: 2px solid black;
-  margin: 2px 2px;
-  padding: 5px 5px;
-}
-.priority,.status{
-  display: flex;
-  justify-content: space-around;
 }

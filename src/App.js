@@ -1,15 +1,15 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Priority from './components/Priority';
+import Navbar from './components/Navbar/Navbar';
+import Priority from './components/Priority/Priority';
 import axios from 'axios';
-import Status from './components/Status';
-import User from './components/User';
+import Status from './components/Status/Status';
+import User from './components/User/User';
 
 function App() {
-  const [data, setData] = useState({});
-
+  const [data, setData] = useState({});  
+  const [ordering, setOrdering] = useState("title");
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,11 +23,14 @@ function App() {
     fetchData();
   }, []);
 
-  const ordering = "title";
+
+  function handleSubmit(e) {
+    setOrdering(e);
+  }
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar onStateChange= {handleSubmit}/>
         <Routes>
           <Route path="/" element={<Priority data={data} ordering={ordering} />} />
           <Route path="/status" element={<Status data={data} ordering={ordering} />} />

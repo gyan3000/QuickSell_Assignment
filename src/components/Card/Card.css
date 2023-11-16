@@ -1,0 +1,95 @@
+.card {
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.id {
+    color: #888;
+}
+
+.profile-img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: grey;
+}
+
+.name {
+    font-weight: 600;
+    color: white;
+    padding-top: 3px;
+}
+
+.dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    left: 22px;
+    top: -3px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.green-dot {
+    background-color: green;
+}
+
+.fade-dot {
+    background-color: #ddd;
+}
+
+.title {
+    text-align: start;
+    margin-top: 10px;
+}
+
+.title>i {
+    margin-right: 5px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+    margin-top: 10px;
+    color: #888;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    width: 55%;
+}
+
+.tag-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: gray;
+    margin-right: 5px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+}
+
+.bottom>i {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 3px;
+}

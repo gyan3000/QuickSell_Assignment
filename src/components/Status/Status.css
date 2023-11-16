@@ -1,0 +1,14 @@
+.status {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-column {
+    flex: 1;
+    margin: 1rem;
+}

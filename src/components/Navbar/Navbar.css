@@ -1,0 +1,62 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.nav-item {
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 20rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: gray;
+}
+
+.dropdown-item>select {
+    padding: 5px 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 8rem;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
