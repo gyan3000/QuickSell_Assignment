@@ -29,10 +29,6 @@ const Navbar = ({ onStateChange }) => {
     setDisplay(!isDisplay);
   };
 
-  const closeDisplay = () => {
-    setDisplay(false)
-  }
-
   return (
     <div className='nav'>
       <div className='nav-item'>
